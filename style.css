@@ -11,6 +11,9 @@
     margin:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:var(--secondary);
     font-family: 'Inter', sans-serif;
@@ -170,6 +173,7 @@ nav > a{
 .hero >p{
     color:var(--grey);
     width: 50%;
+    font-size:1.2rem;
 }
 .touch{
     margin-top:25px;
@@ -186,6 +190,35 @@ nav > a{
     margin-top:20px;
 }
 
+#about{
+    width:90%;
+    margin:auto;
+}
+.section_title{
+    margin:3rem 0;
+    text-align:left;
+    font-size:3.5rem;
+    color:var(--primary);
+    font-weight:600;
+}
+
+#about .content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#about .content img{
+    border-radius: 50%;
+    width: 30vw;
+    height: auto;
+    margin:0 3rem;
+}
+#about .content p{
+    color:var(--grey);
+    width:50%;
+    font-size:1.4rem;
+}
 
 @media only screen and (max-width:1300px) {
     .hero >h2{
@@ -193,6 +226,9 @@ nav > a{
     }
     .hero >h3{
         font-size:5rem;
+    }
+    #about .content p{
+        font-size:1.2rem;
     }
 }
 @media only screen and (max-width:952px) {
@@ -204,6 +240,12 @@ nav > a{
     }
     .hero >h4{
         font-size:1.2rem;
+    }
+    .hero >p{
+        font-size:1rem;
+    }
+    #about .content p{
+        font-size:1rem;
     }
 }
 @media only screen and (max-width:768px) {
@@ -224,6 +266,26 @@ nav > a{
         margin-top:20px;
         margin-bottom:20px;
     }
+    #about .content{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .section_title{
+        text-align:center;
+        font-size: 2.5rem;
+    }
+    #about .content p{
+        margin:20px;
+        text-align:center;
+        width:100%;
+    }
+    .hero >p {
+        width:100%;
+        margin-bottom:1rem;
+    }
+    .hero{
+        text-align:center;
+    }
 }
 @media screen and (max-width: 560px) {
     .hero >h2{
@@ -233,6 +295,6 @@ nav > a{
         font-size:1.5rem;
     }
     .hero >p{
-        width:80%;
+        font-size:1rem;
     }
 }
