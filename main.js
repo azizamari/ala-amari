@@ -22,7 +22,7 @@ for(const link of links){
 AOS.init();
 
 var typed = new Typed('.job', {
-    strings: ["Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer","Video Editor", "3D VFX Artist", "Freelancer"],
+    strings: ["Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer","Video Editor", "3D / VFX Artist", "Freelancer"],
     typeSpeed: 60,
     backSpeed:60,
     loop:true
