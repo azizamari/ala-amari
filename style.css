@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+:root {
+    --primary: #FFE715;
+    --secondary: #101920;
+    --grey: #9FA3A5;
+    --white: #fff;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--secondary);
+    font-family: 'Inter', sans-serif;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position: fixed;
+    z-index:80;
+    background:var(--secondary);
+    width: 100%;
+    padding:15px;
+    box-shadow: 0px 4px 4px 0px rgba(255,255,255,0.22);
+}
+header li, header a, header button, .side p, .side{
+    color:var(--white);
+    font-weight:400;
+    text-decoration: none;
+}
+nav{
+    display:flex;
+    align-items:center;
+    align-content: center;
+    width:100%;
+    justify-content: space-around;
+}
+.open-slide{
+    display: none;
+}
+nav > a{
+    display:flex;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'Bad Script', cursive;
+    color:var(--primary);
+    font-size: 2rem;
+}
+.hamburger{
+    width:60px;
+    height: auto;
+    transition: all 0.3s ease 0s;
+    padding:3px;
+}
+.nav_links{
+    font-weight:600;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav_links li{
+    padding:0 18px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.nav_links li a{
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color:var(--primary);
+}
+.mybtn{
+    outline:none;
+    width:100px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.7s ease 0s;
+    font-size: 1.2rem;
+    background-color:transparent;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    border-radius:10px;
+}
+.mybtn:hover{
+    border:none;
+    color:var(--secondary);
+    background:var(--primary);
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background:var(--secondary);
+    overflow-x:hidden;
+    padding-top:60px;
+    border-top-right-radius: 18px;
+    transition: all 0.5s ease 0s;
+}
+
+.side-nav a{
+    font-size: 1.1rem;
+    padding:20px 10px 10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    color:var(--white);
+    transition: all 0.3s ease 0s;
+}
+.side-nav a:hover{
+    color:var(--primary);
+}
+
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left: 50px;
+}
+.hamburger{
+    width:100%;
+    cursor: pointer;
+}
+.open-slide > a{
+    display:flex;
+}
+
+.hero{
+    width: 90%;
+    padding-top:11rem;
+    margin:auto;
+}
+
+.hero >h4{
+    color:var(--primary);
+    font-weight:400;
+    font-size:1.4rem;
+    /* letter-spacing: 1px; */
+}
+.hero >h2{
+    color:var(--white);
+    font-weight:600;
+    font-size:7rem;
+    letter-spacing: 4px;
+    padding-top:10px;
+    margin-bottom:-1rem;
+}
+
+.hero >h3{
+    color:var(--grey);
+    font-weight:600;
+    font-size:6rem;
+    letter-spacing: 3px;
+}
+
+.hero >p{
+    color:var(--grey);
+    width: 50%;
+}
+.touch{
+    margin-top:25px;
+    width: 180px;
+}
+.yellow_word{
+    color:var(--primary);
+}
+.social_media img{
+    width: 25px;
+    height: auto;
+    margin:10px;
+    margin-top:20px;
+}
+
+
+@media only screen and (max-width:1300px) {
+    .hero >h2{
+        font-size:6rem;
+    }
+    .hero >h3{
+        font-size:5rem;
+    }
+}
+@media only screen and (max-width:952px) {
+    .hero >h2{
+        font-size:5rem;
+    }
+    .hero >h3{
+        font-size:4rem;
+    }
+    .hero >h4{
+        font-size:1.2rem;
+    }
+}
+@media only screen and (max-width:768px) {
+    .nav_links{
+        display:none;
+    }
+    .open-slide{
+        display: block;
+    }
+    .logo{
+        width:160px;
+    }
+    .hero >h2{
+        font-size:3.5rem;
+    }
+    .hero >h3{
+        font-size:2.5rem;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .hero >h2{
+        font-size:2.3rem;
+    }
+    .hero >h3{
+        font-size:1.5rem;
+    }
+    .hero >p{
+        width:80%;
+    }
+}

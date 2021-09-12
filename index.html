@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa Amari - Video Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="open-slide">
+                <a onclick="openSlideMenu()">
+                    <img src="assets/hamburger.svg" class="hamburger" alt="menu button" width="15"/>
+                </a>
+            </span>
+            <a href="/#" class="logo">
+                Alaa Amari
+            </a>
+            <ul class="nav_links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <button class="mybtn">Resume</button>
+            </ul>
+        </nav>
+        <div class="side-nav" id="side-menu">
+            <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a class="side_links" href="/#about">About</a>
+            <a class="side_links" href="/#skills">Skills</a>
+            <a class="side_links" href="/#projects">Projects</a>
+            <a class="side_links" href="/#contact">Contact</a>
+        </div>
+    </header>
+    <section class="hero">
+        <h4>Hello, my name is</h4>
+        <h2>Alaa Amari<span class="bigdot">.</span></h2>
+        <h3>I am a video editor<span class="bigdot">.</span></h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <span class="yellow_word">elit</span>. Suspendisse malesuada sollicitudin velit ut semper. Donec laoreet arcu vestibulum orci <span class="yellow_word">tempor</span> vehicula in eget eros.
+        </p>
+        <button class="mybtn touch">Get in touch!</button>
+        <div class="social_media">
+            <a href="#"><img src="assets/upwork.svg" alt="upwork link"></a>
+            <a href="#"><img src="assets/instagram.svg" alt="instagram link"></a>
+            <a href="#"><img src="assets/linkedin.svg" alt="linkedin link"></a>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
