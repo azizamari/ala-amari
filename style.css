@@ -179,6 +179,9 @@ nav > a{
     width: 50%;
     font-size:1.2rem;
 }
+.job{
+    color:var(--primary);
+}
 .touch{
     margin-top:25px;
     width: 180px;
