@@ -18,6 +18,10 @@ body{
     background-color:var(--secondary);
     font-family: 'Inter', sans-serif;
 }
+section{
+    width:90%;
+    margin:auto;
+}
 
 
 header{
