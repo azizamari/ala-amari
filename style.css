@@ -228,6 +228,76 @@ nav > a{
     font-size:1.4rem;
 }
 
+.skills_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+.skills_list >*{
+    margin: 2rem;
+}
+
+.skill_card > h4{
+    font-size: 1.2rem;
+    text-align: center;
+    color:var(--white);
+    padding:10px;
+}
+.skill_card>img{
+    width:140px;
+    height:auto;
+}
+
+
+
+
+#contact{
+    margin-bottom:5rem;
+}
+
+#contact > h1{
+    text-align:center !important;
+    font-size:2.7rem;
+    margin-bottom:0.3rem;
+}
+.section_2title{
+    text-align:center !important;
+    font-size:2rem;
+    margin-bottom:3rem;
+    color:var(--white);
+    font-weight:600;
+    font-style: italic;
+}
+.connect_button{
+    outline:none;
+    cursor: pointer;
+    padding: 10px 50px;
+    transition: all 0.7s ease 0s;
+    font-size: 1.2rem;
+    background-color:var(--primary);
+    color: var(--secondary) ;
+    border: none;
+    margin:1rem;
+    text-align:center;
+    display: flex;
+    align-items: baseline;
+    flex-flow: center;
+}
+.connect_button:hover{
+    background-color:#d6c000;
+}
+.connect_button > *{
+    margin:0 10px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+
 @media only screen and (max-width:1300px) {
     .hero >h2{
         font-size:6rem;
@@ -294,6 +364,13 @@ nav > a{
     .hero{
         text-align:center;
     }
+    #contact > h1{
+        font-size: 1.8rem;
+    }
+    #contact > h2{
+        font-size: 1.4rem;
+
+    }
 }
 @media screen and (max-width: 560px) {
     .hero >h2{
@@ -304,5 +381,20 @@ nav > a{
     }
     .hero >p{
         font-size:1rem;
+    }
+    #contact > h1{
+        font-size: 1.4rem;
+    }
+    #contact > h2{
+        font-size: 1.2rem;
+
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .connect_button{
+        padding: 10px 10px;
+        font-size: 1rem;
+        margin:0.8rem;
     }
 }
